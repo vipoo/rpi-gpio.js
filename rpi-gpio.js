@@ -401,7 +401,7 @@ function Gpio() {
 
     function getPinBcm(channel) {
         channel = parseInt(channel, 10);
-        return currentValidBcmPins.indexOf(channel) !== -1 ? (channel + '') : null;
+        return channel.toString();
     };
 
     /**
